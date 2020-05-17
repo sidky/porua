@@ -26,6 +26,8 @@ dependencies:
   get_it: ^4.0.2
   http: ^0.12.1
   shared_preferences: ^0.5.7+2
+  webview_flutter: ^0.3.21
+  flutter_html: ^1.0.0
 
 dev_dependencies:
   flutter_test:

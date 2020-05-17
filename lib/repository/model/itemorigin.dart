@@ -5,8 +5,10 @@ class ItemOrigin {
 
   ItemOrigin(this.streamId, this.title, this.htmlUrl);
 
-  ItemOrigin.fromJson(Map<String, dynamic> json): 
-      this(json["streamId"], json["title"], json["htmlUrl"]);
+  factory ItemOrigin.fromJson(Map<String, dynamic> json) {
+    if (json == null) return null;
+    return ItemOrigin(json["streamId"], json["title"], json["htmlUrl"]);
+  }
 
   @override
   String toString() {

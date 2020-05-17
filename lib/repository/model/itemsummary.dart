@@ -9,6 +9,7 @@ class ItemSummary {
 
   ItemSummary(this.direction, this.content, this.author, this.itemOrigin);
 
-  ItemSummary.fromJson(Map<String, dynamic> json): 
-      this(directionFromString(json["direction"]), json["content"], json["author"], ItemOrigin.fromJson(json["origin"]));
+  ItemSummary.fromJson(Map<String, dynamic> json)
+      : this(directionFromString(json["direction"]), json["content"],
+            json["author"], ItemOrigin.fromJson(json["origin"]));
 }

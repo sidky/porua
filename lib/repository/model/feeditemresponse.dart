@@ -32,5 +32,5 @@ class FeedItemResponse {
       ItemURL.fromJson(json["self"]),
       parseTimestampSec(json["updated"]),
       parseArray(json["items"], (v) => FeedItem.fromJson(v)),
-      json["continuation"]);
+      int.parse(json["continuation"].toString()));
 }
